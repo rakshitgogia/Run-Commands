@@ -1,0 +1,16 @@
+#open screen with 2 windows (left/right)
+
+startup_message off
+
+
+layout new
+split -v
+screen -t shell
+focus right
+screen -t shell
+focus left
+
+mousetrack on
+termcapinfo xterm ti@:te@
+termcapinfo xterm-color ti@:te@
+scrollback 1000
